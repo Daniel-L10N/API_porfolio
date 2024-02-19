@@ -1,5 +1,7 @@
 from django.db import models
 import os
+from django.db.models.signals import pre_delete
+from django.dispatch import receiver
 
 # Create your models here.
 class Programer(models.Model):
