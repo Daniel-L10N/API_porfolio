@@ -10,10 +10,10 @@ class Programer(models.Model):
     age = models.PositiveSmallIntegerField()
     image = models.ImageField(upload_to='media/programers', null=True)
     
-    def delete(self, *args, **kwargs):
-        if os.path.isfile(self.image.path):
-            os.remove(self.image.path)
-        super(Programer, self).delete(*args, **kwargs)
+    # def delete(self, *args, **kwargs):
+    #     if os.path.isfile(self.image.path):
+    #         os.remove(self.image.path)
+    #     super(Programer, self).delete(*args, **kwargs)
 
     def __str__(self):
         return self.nickname
