@@ -13,9 +13,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-lx)*$sg7(g*$uudqnve!*#%++&fbprt)*=#c8!v24aksh8lugl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['danit.pythonanywhere.com/']
+ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = ['danit.pythonanywhere.com']
 
 
 # Application definition
@@ -30,6 +31,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'coreapi',
     'api',
+    'danitsoft_solutions',
     'corsheaders',
 ]
 
@@ -47,10 +49,11 @@ MIDDLEWARE = [
 CORS_ALLOW_ALL_ORIGINS= False
 
 CORS_ALLOWED_ORIGINS = [
-    
+
     "http://127.0.0.1:5500",
     "http://localhost:8000",
     "http://localhost:5173",
+    "https://danitsoft.vercel.app"
 ]
 
 

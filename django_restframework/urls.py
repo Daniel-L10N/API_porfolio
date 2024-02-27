@@ -5,11 +5,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 from . import views
 
-
 urlpatterns = [
     path("", views.index, name="home"),
     path('admin/', admin.site.urls),
     path('api/v1/', include('api.urls')),
+    path('danitsoft/', include('danitsoft_solutions.urls')),
     path('docs/', include_docs_urls(title = "API Documentation"))
 ]
 if settings.DEBUG:

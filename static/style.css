@@ -4961,7 +4961,7 @@ video {
   background: linear-gradient(
       45deg,
       rgb(6, 115, 63), rgb(223, 224, 224)
-      /* red, blue, deeppink, blue, 
+      /* red, blue, deeppink, blue,
       red, blue, deeppink, blue */
   );
   background-size: 800%;
@@ -4976,7 +4976,7 @@ video {
   white-space: nowrap;
   border-right: 3px solid;
   width: 38ch;
-  
+
 }
 .typic{
     animation: typing 4.1s steps(38) ,
